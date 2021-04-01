@@ -9,3 +9,4 @@ Run phpmyadmin with docker.
 5. Connect to your phpmyadmin with http://(your ip):8000
 
 # Configuration
+Coming soon
