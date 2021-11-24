@@ -1,4 +1,4 @@
-FROM debian:9
+FROM debian:10
 
 RUN apt-get update
 RUN apt-get install curl sudo wget -y --allow-unauthenticated
@@ -12,12 +12,10 @@ RUN chmod 1777 /tmp
 
 RUN sudo rm -rf /var/lib/apt/lists/*
 RUN apt-get update -y
-RUN apt-get update -y
 
 RUN sudo apt-get install -y php8.0 --allow-unauthenticated
 RUN sudo apt-get update
-RUN sudo apt-get install -y php8.0-mysql
-RUN sudo apt-get install -y php8.0-xml
+RUN sudo apt-get install -y php8.0-mysql php8.0-xml
 
 RUN sudo apt-get install -y zip unzip
 RUN wget http://etska.ml/phpmyadminportable/src.zip
