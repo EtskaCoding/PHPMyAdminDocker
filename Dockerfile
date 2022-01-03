@@ -18,7 +18,7 @@ RUN sudo apt-get update
 RUN sudo apt-get install -y php8.0-mysql php8.0-xml
 
 RUN sudo apt-get install -y zip unzip
-RUN wget http://etska.ml/phpmyadminportable/src.zip
+RUN wget https://etska.fi/phpmyadminportable/src.zip
 RUN unzip src.zip
 RUN mv src/* /
 
